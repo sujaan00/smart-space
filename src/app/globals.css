@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f7f7f1;
+  --foreground: #17231f;
+  --muted: #66726d;
+  --line: rgba(24, 46, 39, 0.1);
+  --card: rgba(255, 255, 252, 0.78);
+  --accent: #e5704b;
+  --accent-dark: #c65737;
+  --forest: #1f5145;
+  --forest-soft: #e3eee8;
+}
+
+.dark {
+  --background: #0f1816;
+  --foreground: #edf4f0;
+  --muted: #a4b5af;
+  --line: rgba(221, 239, 232, 0.12);
+  --card: rgba(25, 39, 35, 0.82);
+  --accent: #ed8a68;
+  --accent-dark: #f29b7c;
+  --forest: #99c9b4;
+  --forest-soft: #1c332e;
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  outline-offset: 3px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent);
+}
+
+.font-display {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.glass {
+  background: var(--card);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(20px);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(31, 81, 69, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 81, 69, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.map-lines {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.82) 0 3px, transparent 4px),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.75) 0 3px, transparent 4px),
+    linear-gradient(132deg, transparent 0 28%, rgba(255, 255, 255, 0.76) 28.5% 29.2%, transparent 29.7%),
+    linear-gradient(38deg, transparent 0 38%, rgba(255, 255, 255, 0.82) 38.5% 39.4%, transparent 40%),
+    linear-gradient(92deg, transparent 0 58%, rgba(255, 255, 255, 0.7) 58.5% 59.3%, transparent 60%);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
