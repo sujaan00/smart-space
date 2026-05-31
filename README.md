@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SmartSpace
 
 SmartSpace is an AI-powered real-estate companion built with Next.js, TypeScript, Tailwind CSS, PostgreSQL, Prisma, Redis, and BullMQ. It brings market intelligence, commute-aware matching, listing generation, bilingual property guidance, saved items, guest exploration, and moderation foundations into one calm consumer product.
@@ -92,3 +93,6 @@ npm run db:push
 npm run db:seed
 ```
 
+=======
+# smart-space
+>>>>>>> e13b6fabd107ca87f7fde7befcef74bea57c9413
