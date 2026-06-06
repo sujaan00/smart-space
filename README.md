@@ -94,8 +94,3 @@ npm run db:seed
 
 =======
 # smart-space
->>>>>>> e13b6fabd107ca87f7fde7befcef74bea57c9413
-
-
-
-*THE ENTIRE PROJECT WAS VIBECODED BY CODEX AND ANTIGRAVITY FOR A GDG EVENT (yes even the readme).*
